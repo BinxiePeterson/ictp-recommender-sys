@@ -19,7 +19,7 @@ data_package <- data(package = "recommenderlab")
 data_package$results[, "Item"]
 ```````
 
-<p>Markdown is a `&lt;em&gt;text-to-html&lt;/em&gt;` conversion tool for writers.</p>
+Markdown is a `<em>text-to-html</em>` conversion tool for writers.
 
 ## [1] "Jester5k"   "MSWeb"      "MovieLense"
 data(MovieLense)
