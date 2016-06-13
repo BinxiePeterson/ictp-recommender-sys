@@ -6,10 +6,9 @@ In this Hands-On Exercise, you will build a simple recommender system in R using
 # Used Packages
 
 ```sh
-> \#install.packages("recommenderlab")
-
-\n library(recommenderlab)
-\n library(ggplot2)
+># install.packages("recommenderlab")
+library(recommenderlab)
+library(ggplot2)
 ```
 
 # Load Data
