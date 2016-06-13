@@ -4,10 +4,13 @@
 In this Hands-On Exercise, you will build a simple recommender system in R using the techniques you have just learned. There are 7 sections. Please ensure you complete each section before you move the the next one.
 
 # Used Packages
-\#install.packages("recommenderlab")
+
+```sh
+> \#install.packages("recommenderlab")
 
 \n library(recommenderlab)
 \n library(ggplot2)
+```
 
 # Load Data
 set.seed(1)
