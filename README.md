@@ -19,9 +19,8 @@ data_package <- data(package = "recommenderlab")
 data_package$results[, "Item"]
 ```````
 
-```javascript
-## [1] "Jester5k"   "MSWeb"      "MovieLense"
-```
+    ## [1] "Jester5k"   "MSWeb"      "MovieLense"
+
 data(MovieLense)
 class(MovieLense)
 ## [1] "realRatingMatrix"
