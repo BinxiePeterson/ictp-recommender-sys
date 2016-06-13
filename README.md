@@ -3,9 +3,20 @@
 
 In this Hands-On Exercise, you will build a simple recommender system in R using the techniques you have just learned. There are 7 sections. Please ensure you complete each section before you move the the next one.
 
-# 1. Used Packages
+# Used Packages
 \#install.packages("recommenderlab")
 
-library(recommenderlab)
-library(ggplot2)
+\n library(recommenderlab)
+\n library(ggplot2)
 
+# Load Data
+set.seed(1)
+
+data_package <- data(package = "recommenderlab")
+data_package$results[, "Item"]
+## [1] "Jester5k"   "MSWeb"      "MovieLense"
+data(MovieLense)
+class(MovieLense)
+## [1] "realRatingMatrix"
+## attr(,"package")
+## [1] "recommenderlab"
