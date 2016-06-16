@@ -82,4 +82,4 @@ as.matrix(similarity_items)
 ```
 image(as.matrix(similarity_items), main = "Item similarity")
 ```
-e) Examine the image and ensure you understand what it illustrates.
+**e) Examine the image and ensure you understand what it illustrates.**
