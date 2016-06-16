@@ -85,7 +85,4 @@ image(as.matrix(similarity_items), main = "Item similarity")
 e) Examine the image and ensure you understand what it illustrates.
 
 ##2. Recommendation Models.
-Display the model applicable to the objects of type 
->realRatingMatrix 
-using 
->recommenderRegistry$get_entries:
+Display the model applicable to the objects of type *realRatingMatrix* using *recommenderRegistry$get_entries*:
