@@ -56,3 +56,18 @@ as.matrix(similarity_users)
 ## 3 0.03827203 0.09706862 0.00000000 0.33343036
 ## 4 0.06634975 0.15310468 0.33343036 0.00000000
 ```
+```
+image(as.matrix(similarity_users), main = "User similarity")
+```
+
+Examine the image and ensure you understand what it illustrates.
+
+c) Compute and visualize the similarity between the first four ITEMS
+
+```
+similarity_items <- similarity(MovieLense[, 1:4], method =
+                                 "cosine", which = "items")
+```
+```
+as.matrix(similarity_items)
+```
