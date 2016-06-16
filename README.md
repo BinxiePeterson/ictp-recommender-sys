@@ -23,6 +23,8 @@ data_package$results[, "Item"]
  ## [1] "Jester5k"   "MSWeb"      "MovieLense"
  ```
 
+table-
+
 data(MovieLense)
 class(MovieLense)
 ## [1] "realRatingMatrix"
