@@ -84,7 +84,7 @@ image(as.matrix(similarity_items), main = "Item similarity")
 ```
 e) Examine the image and ensure you understand what it illustrates.
 
-##2. Recommendation Models.
+## Lab 2. Recommendation Models.
 a) Display the model applicable to the objects of type *realRatingMatrix* using *recommenderRegistry$get_entries*:
 
 ```
@@ -111,5 +111,69 @@ recommender_models$UBCF_realRatingMatrix$parameters
 
 d) List the parameters of these two model. What do they mean?
 
+## Lab 3. Data Exploration
+
+a) Initial exploration of data types and dimensions
+
+```
+dim(MovieLense)
+```
+
+```
+## [1]  943 1664
+```
+```
+slotNames(MovieLense)
+```
+```
+## [1] "data"      "normalize"
+```
+```
+class(MovieLense@data)
+```
+```
+## [1] "dgCMatrix"
+## attr(,"package")
+## [1] "Matrix"
+```
+
+```
+dim(MovieLense@data)
+```
+
+```
+## [1]  943 1664
+```
+
+b) Exploring values of ratings
+
+```
+vector_ratings <- as.vector(MovieLense@data)
+unique(vector_ratings) # what are unique values of ratings
+```
+
+```
+## [1] 5 4 0 3 1 2
+```
+
+```
+table_ratings <- table(vector_ratings) # what is the count of each rating value
+table_ratings
+```
+
+```
+## vector_ratings
+##       0       1       2       3       4       5 
+## 1469760    6059   11307   27002   33947   21077
+```
 
 
+c) Visualize the rating:
+
+```
+vector_ratings <- vector_ratings[vector_ratings != 0] # rating == 0 are NA values
+vector_ratings <- factor(vector_ratings)
+
+qplot(vector_ratings) + 
+  ggtitle("Distribution of the ratings")
+```
