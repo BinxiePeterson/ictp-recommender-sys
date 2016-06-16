@@ -177,3 +177,22 @@ vector_ratings <- factor(vector_ratings)
 qplot(vector_ratings) + 
   ggtitle("Distribution of the ratings")
 ```
+
+d) Examine the image and ensure you understand what it illustrates.
+
+e) Exploring viewings of movies:
+
+```
+views_per_movie <- colCounts(MovieLense) # count views for each movie
+
+table_views <- data.frame(movie = names(views_per_movie),
+                          views = views_per_movie) # create dataframe of views
+table_views <- table_views[order(table_views$views, 
+                                 decreasing = TRUE), ] # sort by number of views
+
+ggplot(table_views[1:6, ], aes(x = movie, y = views)) +
+  geom_bar(stat="identity") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+ggtitle("Number of views of the top movies")
+```
+
