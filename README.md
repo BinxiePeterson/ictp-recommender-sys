@@ -33,3 +33,19 @@ class(MovieLense)
 ## attr(,"package")
 ## [1] "recommenderlab"
 ```
+
+# Lab 1. Computing the Similarity Matrix
+
+## a) Determine how similar the first four USERS are with each other
+
+```
+similarity_users <- similarity(MovieLense[1:4, ], 
+                               method = "cosine", 
+                               which = "users")
+```                               
+
+## b) Convert similarity_users class into a matrix and visualize it
+
+```
+as.matrix(similarity_users)
+```
