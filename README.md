@@ -60,9 +60,9 @@ as.matrix(similarity_users)
 image(as.matrix(similarity_users), main = "User similarity")
 ```
 
-Examine the image and ensure you understand what it illustrates.
+c) Examine the image and ensure you understand what it illustrates.
 
-c) Compute and visualize the similarity between the first four ITEMS
+d) Compute and visualize the similarity between the first four ITEMS
 
 ```
 similarity_items <- similarity(MovieLense[, 1:4], method =
@@ -71,3 +71,12 @@ similarity_items <- similarity(MovieLense[, 1:4], method =
 ```
 as.matrix(similarity_items)
 ```
+```
+##                   Toy Story (1995) GoldenEye (1995) Four Rooms (1995) Get Shorty (1995)
+## Toy Story (1995)         0.0000000        0.4023822         0.3302448        0.4549379
+## GoldenEye (1995)         0.4023822        0.0000000         0.2730692        0.5025708
+## Four Rooms (1995)        0.3302448        0.2730692         0.0000000        0.3248664
+## Get Shorty (1995)        0.4549379        0.5025708         0.3248664        0.0000000
+```
+
+e) 
