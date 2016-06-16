@@ -79,4 +79,7 @@ as.matrix(similarity_items)
 ## Get Shorty (1995)        0.4549379        0.5025708         0.3248664        0.0000000
 ```
 
-e) 
+```
+image(as.matrix(similarity_items), main = "Item similarity")
+```
+e) Examine the image and ensure you understand what it illustrates.
