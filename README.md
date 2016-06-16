@@ -34,7 +34,7 @@ class(MovieLense)
 ## [1] "recommenderlab"
 ```
 
-# Lab 1. Computing the Similarity Matrix
+### Lab 1. Computing the Similarity Matrix
 
 a) Determine how similar the first four USERS are with each other
 
