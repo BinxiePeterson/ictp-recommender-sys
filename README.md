@@ -18,9 +18,10 @@ set.seed(1)
 data_package <- data(package = "recommenderlab")
 data_package$results[, "Item"]
 ```````
- "And here's to you, <span style="background-color:green">Mrs. Robinson</span>, Jesus loves you more than you will know."
  
-    ## [1] "Jester5k"   "MSWeb"      "MovieLense"
+ ```javascript
+ ## [1] "Jester5k"   "MSWeb"      "MovieLense"
+ ```
 
 data(MovieLense)
 class(MovieLense)
