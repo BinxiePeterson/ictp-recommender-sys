@@ -85,4 +85,31 @@ image(as.matrix(similarity_items), main = "Item similarity")
 e) Examine the image and ensure you understand what it illustrates.
 
 ##2. Recommendation Models.
-Display the model applicable to the objects of type *realRatingMatrix* using *recommenderRegistry$get_entries*:
+a) Display the model applicable to the objects of type *realRatingMatrix* using *recommenderRegistry$get_entries*:
+
+```
+recommender_models <- recommenderRegistry$get_entries(dataType = "realRatingMatrix")
+names(recommender_models)
+```
+How many models are listed?
+
+b) Describe these models
+
+```
+lapply(recommender_models, "[[", "description")
+```
+
+c) We plan to use IBCF and UBCF. Check the parameters of these two models.
+
+```
+recommender_models$IBCF_realRatingMatrix$parameters
+```
+
+```
+recommender_models$UBCF_realRatingMatrix$parameters
+```
+
+d) List the parameters of these two model. What do they mean?
+
+
+
