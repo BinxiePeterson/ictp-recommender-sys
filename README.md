@@ -195,4 +195,17 @@ ggplot(table_views[1:6, ], aes(x = movie, y = views)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
 ggtitle("Number of views of the top movies")
 ```
+f) What are the top movies listed?
 
+g) Exploring average ratings:
+
+```
+average_ratings <- colMeans(MovieLense)
+
+qplot(average_ratings) + 
+  stat_bin(binwidth = 0.1) +
+  ggtitle("Distribution of the average movie rating")
+```
+
+
+  
