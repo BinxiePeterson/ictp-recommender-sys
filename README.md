@@ -224,7 +224,7 @@ we noticed the following:
 * The movies that were viewed only a few times might result in biased ratings because of insufficient data
 * Ratings from users who rated only a few movies might also result in biased ratings.
 
-We need to determine the minimum number of users per movie and vice versa.
+### **Exercise 4.1:** We need to determine the minimum number of users per movie and vice versa.
 
 a) Define ratings_movies to contain the matrix (users who have rated at least 50 movies + movies that have been watched at least 100 times)
 b) Using the same approach as we did in the previous section, visualize the top 2 percent of users and movies in the new matrix
