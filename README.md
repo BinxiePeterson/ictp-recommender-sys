@@ -207,5 +207,43 @@ qplot(average_ratings) +
   ggtitle("Distribution of the average movie rating")
 ```
 
+## Lab 4 Data Preparation
 
+In this lab exercise, the goal will be to prepare the data  set to be used in our recommender models. In the execises we will 
+accomplish this via the following:
+
+1. Selection of relevant data
+2. Normalization of the data
+
+Selection of Relevant data:
+
+The reason we explored the data was to get a sense of how and in what ways the data might influence a recommendation.
+A recommendation based on a small set of data points will not be very good. Now, when we explored the data previously,
+we noticed the following:
+ a) The movies that were viewed only a few times might result in biased ratings because of insufficient data
+ b) Ratings from users who rated only a few movies might also result in biased ratings.
+
+We need to determine the minimum number of users per movie and vice versa.
+
+a) Define ratings_movies to contain the matrix (users who have rated at least 50 movies + movies that have been watched at least 100 times)
+b) Using the same approach as we did in the previous section, visualize the top 2 percent of users and movies in the new matrix
+c) Build the heat map, what do you observe?
+d) Visualize the distribution of the average rating by user
+
+Normalizing the data:
+
+a) Visualize the normalized matrix using the prebuilt normalize function
+b) Why is it colored?
+c) Why are there still some lines that are more blue and some that are more red?
+d) Why is normalization important here?
+
+Binarizing the data:
+Using the binarize function binarize for these two options
+a) Option 1: define a matrix equal to 1 if the movie has been watched
+b) Visualize 5% of users and movies using quantile by building a heatmap
+c) Option 2: define a matrix equal to 1 if the cell has a rating above the threshold (3)
+d) Visualize option 2 using the same approach and build the heat map.
+
+
+In this lab exercise, we have prepared the data to perform recommendations. In the next exercises, we will build collaborative filtering models.
   
