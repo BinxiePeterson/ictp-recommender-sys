@@ -228,22 +228,34 @@ we noticed the following:
 _We need to determine the minimum number of users per movie and vice versa._
 
 a) Define ratings_movies to contain the matrix (users who have rated at least 50 movies + movies that have been watched at least 100 times)
+
 b) Using the same approach as we did in the previous section, visualize the top 2 percent of users and movies in the new matrix
+
 c) Build the heat map, what do you observe?
+
 d) Visualize the distribution of the average rating by user
 
-Normalizing the data:
+### **Exercise 4.2:**
+_Normalizing the data:_
 
 a) Visualize the normalized matrix using the prebuilt normalize function
+
 b) Why is it colored?
+
 c) Why are there still some lines that are more blue and some that are more red?
+
 d) Why is normalization important here?
 
-Binarizing the data:
+### **Exercise 4.3:**
+_Binarizing the data:_
 Using the binarize function binarize for these two options
+
 a) Option 1: define a matrix equal to 1 if the movie has been watched
+
 b) Visualize 5% of users and movies using quantile by building a heatmap
+
 c) Option 2: define a matrix equal to 1 if the cell has a rating above the threshold (3)
+
 d) Visualize option 2 using the same approach and build the heat map.
 
 
