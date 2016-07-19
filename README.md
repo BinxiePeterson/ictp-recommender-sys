@@ -215,7 +215,7 @@ accomplish this via the following:
 1. Selection of relevant data
 2. Normalization of the data
 
-Selection of Relevant data:
+### Selection of Relevant data:
 
 The reason we explored the data was to get a sense of how and in what ways the data might influence a recommendation.
 A recommendation based on a small set of data points will not be very good. Now, when we explored the data previously,
