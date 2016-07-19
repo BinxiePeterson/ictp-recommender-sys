@@ -261,3 +261,4 @@ d) Visualize option 2 using the same approach and build the heat map.
 
 In this lab exercise, we have prepared the data to perform recommendations. In the next exercises, we will build collaborative filtering models.
   
+**Ekpe** Okorafor
