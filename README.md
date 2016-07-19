@@ -220,7 +220,9 @@ accomplish this via the following:
 The reason we explored the data was to get a sense of how and in what ways the data might influence a recommendation.
 A recommendation based on a small set of data points will not be very good. Now, when we explored the data previously,
 we noticed the following:
+
  a) The movies that were viewed only a few times might result in biased ratings because of insufficient data
+
  b) Ratings from users who rated only a few movies might also result in biased ratings.
 
 We need to determine the minimum number of users per movie and vice versa.
