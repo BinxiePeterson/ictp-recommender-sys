@@ -261,4 +261,14 @@ d) Visualize option 2 using the same approach and build the heat map.
 
 In this lab exercise, we have prepared the data to perform recommendations. In the next exercises, we will build collaborative filtering models.
   
-**Ekpe** Okorafor
+## Lab 5 ITEM-based Collaborative Filtering
+The starting point is a rating matrix in which rows correspond to users and columns correspond to items.
+
+### Defining the training and test sets
+
+The two sets are as follows:
+* Training set: This set includes users from which the model learns
+* Test set: This set includes users to whom we recommend movies
+
+Use '''ratings_movies''' from the previous exercises. This is the subset of MovieLense users who have rated at least 50 movies and movies that have been rated at least 100 times.
+
