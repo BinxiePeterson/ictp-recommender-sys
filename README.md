@@ -270,5 +270,5 @@ The two sets are as follows:
 * Training set: This set includes users from which the model learns
 * Test set: This set includes users to whom we recommend movies
 
-Use '''ratings_movies''' from the previous exercises. This is the subset of MovieLense users who have rated at least 50 movies and movies that have been rated at least 100 times.
+Use '''sh ratings_movies''' from the previous exercises. This is the subset of MovieLense users who have rated at least 50 movies and movies that have been rated at least 100 times.
 
