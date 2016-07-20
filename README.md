@@ -270,5 +270,12 @@ The two sets are as follows:
 * Training set: This set includes users from which the model learns
 * Test set: This set includes users to whom we recommend movies
 
-Use '''sh ratings_movies''' from the previous exercises. This is the subset of MovieLense users who have rated at least 50 movies and movies that have been rated at least 100 times.
+Use _ratings_movies_ from the previous exercises. This is the subset of MovieLense users who have rated at least 50 movies and movies that have been rated at least 100 times.
 
+First, we randomly define the which_train vector that is TRUE for users in the training set and FALSE for the others. We will set the probability in the training set as 80 percent:
+
+```
+which_train <- sample(x = c(TRUE, FALSE), size = nrow(ratings_movies),
+replace = TRUE, prob = c(0.8, 0.2))
+head(which_train)
+```
