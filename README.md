@@ -283,6 +283,7 @@ head(which_train)
 _Defining training/test sets_
 
 a) Define the training and test sets
+
 b) Recommend items to each user, and use the k-fold:
 * Split the users randomly into five groups
 * Use a group as a test set and the other groups as training sets
