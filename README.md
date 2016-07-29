@@ -279,3 +279,11 @@ which_train <- sample(x = c(TRUE, FALSE), size = nrow(ratings_movies),
 replace = TRUE, prob = c(0.8, 0.2))
 head(which_train)
 ```
+### **Exercise 5.1:**
+_Defining training/test sets_
+
+a) Define the training and test sets
+b) Recommend items to each user, and use the k-fold:
+* Split the users randomly into five groups
+* Use a group as a test set and the other groups as training sets
+* Repeat it for each group
