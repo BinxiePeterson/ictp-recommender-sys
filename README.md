@@ -289,6 +289,8 @@ b) Recommend items to each user, and use the k-fold:
 * Use a group as a test set and the other groups as training sets
 * Repeat it for each group
 
+
+### **Exercise 5.2:**
 **Building the recommendation model**
 The function to build models is recommender and its inputs are as follows:
 * Data: This is the training set
@@ -310,8 +312,17 @@ recommender_models$IBCF_realRatingMatrix$parameters
 | normalize            | center  |
 | normalize_sim_matrix | FALSE   |
 | alpha                | 0.5     |
-|na_as_zero            | FALSE   |
-minRating NA
+| na_as_zero           | FALSE   |
+| minRating            | NA      |
+
+a) Build the recommender model using default values
+
+b) How many users does the model learn with?
+
+c) Explore the recommender model using ```getModel``` 
+* Describe the model
+* Structure of the similarity matrix
+* What are the dimensions?
 
 
  
