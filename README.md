@@ -303,7 +303,15 @@ recommender_models <- recommenderRegistry$get_entries(dataType =
 recommender_models$IBCF_realRatingMatrix$parameters
 ```
 
-
+| Parameters           | Default |
+| -------------        | ------: |
+| k                    | 30      |      
+| method               | Cosine  |
+| normalize            | center  |
+| normalize_sim_matrix | FALSE   |
+| alpha                | 0.5     |
+|na_as_zero            | FALSE   |
+minRating NA
 
 
  
