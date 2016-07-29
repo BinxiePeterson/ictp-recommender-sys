@@ -280,7 +280,7 @@ replace = TRUE, prob = c(0.8, 0.2))
 head(which_train)
 ```
 ### **Exercise 5.1:**
-_Defining training/test sets_
+**Defining training/test sets**
 
 a) Define the training and test sets
 
@@ -288,3 +288,23 @@ b) Recommend items to each user, and use the k-fold:
 * Split the users randomly into five groups
 * Use a group as a test set and the other groups as training sets
 * Repeat it for each group
+
+**Building the recommendation model**
+The function to build models is recommender and its inputs are as follows:
+* Data: This is the training set
+* Method: This is the name of the technique
+* Parameters: These are some optional parameters of the technique
+
+The model is called IBCF, which stands for item-based collaborative filtering. Let's take a look at its parameters:
+
+```
+recommender_models <- recommenderRegistry$get_entries(dataType =
+"realRatingMatrix")
+recommender_models$IBCF_realRatingMatrix$parameters
+```
+
+
+
+
+ 
+
