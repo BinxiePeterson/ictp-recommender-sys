@@ -292,6 +292,7 @@ b) Recommend items to each user, and use the k-fold:
 
 ### **Exercise 5.2:**
 **Building the recommendation model**
+
 The function to build models is recommender and its inputs are as follows:
 * Data: This is the training set
 * Method: This is the name of the technique
@@ -324,6 +325,29 @@ c) Explore the recommender model using ```getModel```
 * Structure of the similarity matrix
 * What are the dimensions?
 
+d) Build a distribution chart
+
+e) Which movies have the most elements (top 6)?
+
+**Applying recommender system on the dataset:**
+
+Define ```n_recommended``` that specifies the number of items to recommend to each user. This
+section will show you the most popular approach to computing a weighted sum:
+
+```
+n_recommended <- 6 # the number of items to recommend to each user
+```
+
+For each user, the algorithm extracts its rated movies. For each movie, it identifies all its similar items, starting from the similarity matrix. Then, the algorithm ranks each similar item in this way:
+* Extract the user rating of each purchase associated with this item. The rating is used as a weight.
+* Extract the similarity of the item with each purchase associated with this item.
+* Multiply each weight with the related similarity.
+* Sum everything up.
+Then, the algorithm identifies the top _n_ recommendations:
+
+a) Produce the object that contains the recommendations using _n_recommend_
+
+b) 
 
  
 
