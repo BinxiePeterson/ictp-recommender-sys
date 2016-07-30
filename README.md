@@ -355,10 +355,11 @@ d) What are the recommendations for the first user?
 
 e) Extract the movie names for the recommendation
 
+
 **Hint**
-* **items:** This is the list with the indices of the recommended items for each user
-* **itemLabels:** This is the name of the items
-* **n:** This is the number of recommendations
+* **items:** _This is the list with the indices of the recommended items for each user_
+* **itemLabels:** _This is the name of the items_
+* **n:** _This is the number of recommendations_
 
  
 
