@@ -347,7 +347,18 @@ Then, the algorithm identifies the top _n_ recommendations:
 
 a) Produce the object that contains the recommendations using _n_recommend_
 
-b) 
+b) What is the structure?
+
+c) What are the slots obtained with ```slotNames(recommendation object obtained in (a))```?
+
+d) What are the recommendations for the first user?
+
+e) Extract the movie names for the recommendation
+
+**Hint**
+* **items:** This is the list with the indices of the recommended items for each user
+* **itemLabels:** This is the name of the items
+* **n:** This is the number of recommendations
 
  
 
