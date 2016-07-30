@@ -334,7 +334,7 @@ e) Which movies have the most elements (top 6)?
 Define ```n_recommended``` that specifies the number of items to recommend to each user. This
 section will show you the most popular approach to computing a weighted sum:
 
-```
+```javascript
 n_recommended <- 6 # the number of items to recommend to each user
 ```
 
