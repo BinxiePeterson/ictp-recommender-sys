@@ -301,8 +301,7 @@ The function to build models is recommender and its inputs are as follows:
 The model is called IBCF, which stands for item-based collaborative filtering. Let's take a look at its parameters:
 
 ```
-recommender_models <- recommenderRegistry$get_entries(dataType =
-"realRatingMatrix")
+recommender_models <- recommenderRegistry$get_entries(dataType = "realRatingMatrix")
 recommender_models$IBCF_realRatingMatrix$parameters
 ```
 
@@ -329,6 +328,7 @@ d) Build a distribution chart
 
 e) Which movies have the most elements (top 6)?
 
+### **Exercise 5.3:**
 **Applying recommender system on the dataset:**
 
 Define ```n_recommended``` that specifies the number of items to recommend to each user. This
@@ -370,7 +370,51 @@ h) Identify the most recommended movies
 
 ## Lab 6 USER-based collaborative filtering
 
+### **Exercise 6.1:**
+**Defining training/test sets**
+
+a) Define the training and test sets
+
+b) Recommend items to each user, and use the k-fold:
+* Split the users randomly into five groups
+* Use a group as a test set and the other groups as training sets
+* Repeat it for each group
+
+### **Exercise 6.2:**
 ###Building the recommendation system:
 
+The R command to build the model is the same as the previous lab. Now, the technique is called UBCF:
+
+```sh
+recommender_models <- recommenderRegistry$get_entries(dataType = "realRatingMatrix")
+recommender_models$UBCF_realRatingMatrix$parameters
+```
+| Parameters | Default |
+| -------    | ------: |
+| method     | Cosine  |
+| nn         | 25      |
+| sample     | FALSE   |
+| normalize  | center  |
+| minRating  | NA      |
+
+Some relevant parameters are:
+* **method:** This shows how to compute the similarity between users
+* **nn:** This shows the number of similar users
+
+
+a) Build a recommender model leaving the parameters to their defaults
+
+b) Extract some details about the model using ```getModel```
+
+### **Exercise 6.3:**
+**Applying recommender system on the dataset:**
+
+a) Determine the top six recommendations for each new user
+
+b) Define a matrix with the recommendations to the test set users
+
+c) Examine the first four users
+
+d) What are the the top titles
 
 
