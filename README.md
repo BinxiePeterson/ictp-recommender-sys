@@ -361,5 +361,16 @@ e) Extract the movie names for the recommendation
 * **itemLabels:** _This is the name of the items_
 * **n:** _This is the number of recommendations_
 
- 
+f) Define a matrix with the recommendations for each user
+
+g) Visualize the recommendations for the first four users
+
+h) Identify the most recommended movies
+
+
+## Lab 6 USER-based collaborative filtering
+
+###Building the recommendation system:
+
+
 
