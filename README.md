@@ -19,7 +19,7 @@ data_package <- data(package = "recommenderlab")
 data_package$results[, "Item"]
 ```````
  
-```
+```html
 ## [1] "Jester5k"   "MSWeb"      "MovieLense"
 ```
 
