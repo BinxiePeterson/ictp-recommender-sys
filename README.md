@@ -17,10 +17,11 @@ library(ggplot2)
 set.seed(1)
 data_package <- data(package = "recommenderlab")
 data_package$results[, "Item"]
-```````
+```
  
-
-`## [1] "Jester5k"   "MSWeb"      "MovieLense"`
+```
+## [1] "Jester5k"   "MSWeb"      "MovieLense"
+```
 
 
 ```sh
